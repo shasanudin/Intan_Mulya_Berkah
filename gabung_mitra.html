@@ -10,14 +10,7 @@
 </head>
 <body>
 
-    <nav>
-        <a href="index.html" class="logo">IMB Group</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a href="gabung-mitra.html" style="color: var(--primary);">Gabung Mitra</a></li>
-        </ul>
-    </nav>
+    <div id="navbar"></div>
 
     <header class="hero-invest">
         <h1>Peluang Kerjasama Investasi</h1>
@@ -83,12 +76,13 @@
                 <h3 style="text-align: center;">Daftar Sebagai Mitra Investor</h3>
                 <p style="text-align: center; font-size: 0.9rem;">Isi formulir di bawah ini, tim kami akan segera menghubungi Anda.</p>
                 
-                <form>
+                <form action="https://formspree.io/f/shidiqhasanudin6@gmail.com" method="POST">
+    
                     <label>Nama Lengkap</label>
-                    <input type="text" placeholder="Masukkan nama Anda..." required>
+                    <input type="text" name="Nama_Lengkap" placeholder="Masukkan nama Anda..." required>
                     
                     <label>Rencana Nilai Investasi (Rp)</label>
-                    <select required>
+                    <select name="Rencana_Investasi" required>
                         <option value="">Pilih Nominal...</option>
                         <option value="15jt">Rp 15.000.000 (Saham 25%)</option>
                         <option value="30jt">Rp 30.000.000 (Saham 40%)</option>
@@ -96,7 +90,9 @@
                     </select>
                     
                     <label>Nomor WhatsApp</label>
-                    <input type="tel" placeholder="contoh : 0812345xxxx" required>
+                    <input type="tel" name="Nomor_WhatsApp" placeholder="contoh : 0812345xxxx" required>
+                
+                    <input type="hidden" name="_subject" value="Pengajuan Mitra Investor Baru - Caruban Internet">
                     
                     <button type="submit">KIRIM PENGAJUAN MITRA</button>
                 </form>
@@ -111,6 +107,6 @@
             Investasi mengandung risiko. Seluruh keputusan investasi berdasarkan kesepakatan PARA PIHAK sesuai MoU.
         </p>
     </footer>
-
+<script>fetch('navbar.html').then(r => r.text()).then(html => { document.getElementById('navbar').innerHTML = html; }).catch(() => {});</script>
 </body>
 </html>
