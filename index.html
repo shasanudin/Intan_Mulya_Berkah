@@ -1,194 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Halaman Beranda</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">NandoRegx</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="layanan.html">Layanan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="acara.html">Acara</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tentang_kami.html">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kontak.html">Kontak</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search"
-                            placeholder="Pencarian" aria-label="Pencarian">
-                        <button class="btn btn-outline-light" type="submit">Cari</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!-- End Navbar -->
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Intan Mulya Berkah - Profil Perusahaan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
 
+    <nav>
+        <div class="logo">IMB Group</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang_kami.html">Tentang Kami</a></li>
+            <li><a href="layanan.html">Unit Bisnis</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-        <!-- Carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide"
-            data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <header id="home">
+        <h1>PT Intan Mulya Berkah</h1>
+        <p>Berdedikasi untuk memberikan solusi terbaik melalui inovasi digital dan layanan berkualitas bagi masyarakat Indonesia.</p>
+    </header>
+
+    <div class="container">
+        <section id="about" class="section-title">
+            <h2>Tentang Kami</h2>
+            <p style="max-width: 800px; margin: 20px auto;">PT Intan Mulya Berkah adalah perusahaan yang bergerak di berbagai sektor strategis, mulai dari penyediaan infrastruktur internet hingga perdagangan elektronik (E-Commerce), berkomitmen untuk mendorong pertumbuhan ekonomi digital di Indonesia.</p>
+        </section>
+
+        <section id="units">
+            <div class="section-title">
+                <h2>Unit Bisnis Kami</h2>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/acara-adat-bali.jpg" class="d-block w-100"
-                        alt="Acara Adat Bali Hindu">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Acara Adat Bali Hindu</h5>
-                        <p>Bukan hanya keindahan alam yang dimiliki Bali, namun
-                            budaya yang mereka miliki juga mengandung
-                            keistimewaan dan keindahan budaya yang sangat kental</p>
+            <div class="business-units">
+                
+                <div class="card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Caruban Internet</h3>
+                    <p>Penyedia jasa internet (ISP) terpercaya dengan koneksi stabil, cepat, dan terjangkau untuk kebutuhan rumah tangga maupun perkantoran.</p>
+                    <a href="layanan.html" class="btn-link btn-internet">Cek Jangkauan <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Intan Mulya Berkah Shop</h3>
+                    <p>Menghadirkan produk-produk berkualitas melalui platform digital terbaik. Kami hadir lebih dekat untuk memudahkan belanja Anda.</p>
+                    <div style="margin-top: 15px;">
+                        <a href="https://www.tiktok.com" target="_blank" class="btn-link btn-shop"><i class="fab fa-tiktok"></i> TikTok</a>
+                        <a href="https://www.tokopedia.com" target="_blank" class="btn-link btn-shop"><i class="fas fa-shopping-cart"></i> Tokopedia</a>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/acara-nikah-3.jpg" class="d-block w-100"
-                        alt="Acara Pernikahan">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Acara Penikahan</h5>
-                        <p>Pernikahan adalah sebuah janji ilahi yang harus
-                            diabadikan momennya. Kami menawarkan jasa acara,
-                            dekorasi, dan lainnya.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/acara-adat-budaya-manggari.jpg" class="d-block
-                        w-100" alt="Acara Adat Budaya Manggari">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Acara Adat Manggarai</h5>
-                        <p>Mengenal daerah Manggarai adalah sebuah kabupaten
-                            yang ada di provinsi Nusa Tenggara Timur (NTT)
-                            Indonesia bagian Timur.</p>
-                    </div>
-                </div>
+
             </div>
-            <button class="carousel-control-prev" type="button"
-                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button"
-                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </section>
+    </div>
+
+    <footer id="contact">
+        <h3>PT Intan Mulya Berkah</h3>
+        <p>Lingkungan Manis, Sumber, Sumber Kab. Cirebon, Jawa Barat, Indonesia</p>
+        <div class="social-links" style="margin: 20px 0;">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <!-- End Carousel -->
+        <hr style="border: 0.5px solid #444; margin-bottom: 20px;">
+        <p>&copy; 2024 PT Intan Mulya Berkah. All rights reserved.</p>
+    </footer>
 
-        <!-- Card -->
-        <div>
-            <h2 class="text-center mt-5">ACARA TERAKHIR</h2>
-            <div class="d-flex justify-content-center">
-                <div class="card me-5 mt-5 mb-5" style="width: 18rem;">
-                    <img src="img/acara-nikah-1.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Acara pernikahan di Babarsari, Yogyakarta</p>
-                    </div>
-                </div>
-                <div class="card ms-5 me-5 mt-5 mb-5" style="width: 18rem;">
-                    <img src="img/acara-adat-layanan-2.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Acara adat Kalimantan di UNY</p>
-                    </div>
-                </div>
-                <div class="card ms-5 mt-5 mb-5" style="width: 18rem;">
-                    <img src="img/acara-nikah-3.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Acara pernikahan di Bantul, Yogyakarta</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Card -->
-
-        <!-- Tentang Kami -->
-        <div class="container-fluid bg-light justify-content-center pt-5 pb-5">
-            <h2 class="mb-3 text-secondary text-center">TENTANG KAMI</h2>
-            <hr class="mb-4">
-            <div class="row ms-5 me-5">
-                <div class="col">
-                    <h4>Jasa Event Organizer (EO) Profesional di Yogyakarta</h4>
-                    <p><strong>NandoRegx</strong> melayani jasa event
-                        organizer (EO) di Yogyakarta yang telah berpengalaman dalam
-                        menyelenggarakan berbagai event indoor ataupun outdoor,
-                        seperti bazaar produk perusahaan, wisuda kuliah, konser
-                        musik, hingga event outbound dengan konsep yang unik dan
-                        menarik.</p>
-                    <p>Tim event organizer (EO) <strong>NandoRegx</strong>
-                        akan merancang acara sesuai dengan kebutuhan Anda dan
-                        membuka diskusi untuk bertukar ide rancangan acara yang
-                        akan diselenggarakan nanti. Beberapa perusahaan telah
-                        mempercayakan EO kami untuk menyelenggarakan event
-                        bazaar serta kegiatan outbound dan kami juga sebagai EO
-                        profesional selalu menentukan venue yang tepat untuk
-                        acara Anda. Kami tidak hanya berkontribusi untuk acara
-                        perkantoran saja, tapi kami juga memberikan acara yang
-                        meriah untuk anak-anak sekolah/kuliah, nikah online atau
-                        offline, reuni keluarga, pagelaran konser, hingga
-                        beberapa jenis acara yang meriah dan mengesankan</p>
-                    <p>Diskusikan konsep event yang Anda inginkan kepada tim EO
-                        kami di Yogyakarta sehingga dapat menentukan konsep yang
-                        berbeda dari lainnya dan tidak akan terlupakan!</p>
-                </div>
-            </div>
-        </div>
-        <!-- End Tentang Kami -->
-
-        <!-- Footer -->
-        <nav class="navbar bg-dark text-light">
-            <div class="container-fluid">
-                <span>
-                    Copyright © 2022. <strong>NandoRegx</strong> Jasa Event
-                    Organizer (EO) Bazaar, Outbound Profesional di Yogyakarta. All
-                    Rights Reserved
-                </span>
-            </div>
-        </nav>
-        <!-- End Footer -->
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>
