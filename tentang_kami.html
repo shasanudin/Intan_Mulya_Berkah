@@ -1,145 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Halaman Tentang Kami</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">NandoRegx</a>
-                <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page"
-                                href="index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="layanan.html">Layanan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="acara.html">Acara</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="tentang_kami.html">Tentang
-                                Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kontak.html">Kontak</a>
-                        </li>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - PT Intan Mulya Berkah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/tentang_kami.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">IMB Group</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="tentang-kami.html" style="color: var(--primary);">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-about">
+        <h1>Profil Perusahaan</h1>
+        <p>PT Intan Mulya Berkah & Unit Bisnis Caruban Internet</p>
+    </header>
+
+    <div class="container">
+        <section class="profile-card">
+            <h2 class="section-title">Mengenal Kami</h2>
+            <p class="highlight-text">
+                Caruban Internet adalah unit usaha yang bergerak di sektor jasa layanan internet (ISP lokal) yang berfokus pada penyediaan akses internet bagi rumah tangga dan usaha kecil dengan harga terjangkau serta kualitas koneksi yang stabil dan andal.
+            </p>
+            
+            <p>
+                Sebagai mitra resmi <strong>Internet Keluarga</strong> dan unit bisnis dari <strong>PT. Intan Mulya Berkah</strong>, kami berkomitmen menghadirkan layanan yang mudah diakses dan responsif terhadap kebutuhan pelanggan[cite: 6, 7]. Kami aktif berkontribusi dalam transformasi digital masyarakat lokal, khususnya di bidang pendidikan, ekonomi, dan pelayanan publik berbasis teknologi informasi[cite: 9].
+            </p>
+
+            <div class="vimi-grid">
+                <div class="vimi-item">
+                    <h3>Visi</h3>
+                    <p>Menjadi penyedia layanan internet lokal yang inklusif, terjangkau, dan berkelanjutan, yang berperan aktif dalam memperluas akses digital, meningkatkan kesejahteraan masyarakat, serta mendorong pertumbuhan ekonomi lokal melalui konektivitas yang merata[cite: 12].</p>
+                </div>
+                <div class="vimi-item">
+                    <h3>Misi</h3>
+                    <ul class="vimi-list">
+                        <li>Menyediakan akses internet terjangkau bagi rumah tangga dan UMKM[cite: 15].</li>
+                        <li>Mengurangi kesenjangan digital di tingkat lokal[cite: 16].</li>
+                        <li>Mendukung pertumbuhan ekonomi keluarga melalui konektivitas digital[cite: 17].</li>
+                        <li>Mengelola usaha secara profesional, transparan, dan berkelanjutan[cite: 18].</li>
+                        <li>Membangun kemitraan strategis yang berorientasi pada dampak sosial[cite: 19].</li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search"
-                            placeholder="Pencarian" aria-label="Pencarian">
-                        <button class="btn btn-outline-light" type="submit">Cari</button>
-                    </form>
                 </div>
             </div>
-        </nav>
-        <!-- End Navbar -->
 
-        <!-- Carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide"
-            data-bs-ride="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/carousel-tentangkami.jpg" class="d-block
-                        w-100"
-                        alt="Tentang Kami">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Tentang Kami</h5>
-                        <p>Membantu anda membuat acara yang menyenangkan dan tak
-                            terlupakan, sepak terjang kami sebagai jasa Event
-                            Organizer Online dan Offline profesional selalu
-                            memberikan kepuasan terhadap pelanggan untuk
-                            menciptakan suasana acara yang tidak terlupakan dan
-                            mengesankan. Berikut informasi tentang <strong>NandoRegx</strong>.</p>
-                    </div>
-                </div>
+            <div class="legal-box">
+                <h3 style="margin-bottom: 20px; color: var(--primary);">Legalitas & Afiliasi Usaha</h3>
+                <table class="legal-table">
+                    <tr>
+                        <td>Nama Usaha</td>
+                        <td>Caruban Internet [cite: 22]</td>
+                    </tr>
+                    <tr>
+                        <td>Bidang Usaha</td>
+                        <td>Jasa Internet (RT/RW Net & Layanan Broadband Lokal) [cite: 23]</td>
+                    </tr>
+                    <tr>
+                        <td>Afiliasi Utama</td>
+                        <td>Unit Bisnis PT. Intan Mulya Berkah [cite: 24]</td>
+                    </tr>
+                    <tr>
+                        <td>Kemitraan</td>
+                        <td>Internet Keluarga [cite: 25]</td>
+                    </tr>
+                </table>
             </div>
-        </div>
-        <!-- End Carousel -->
 
-        <!-- Tentang Kami -->
-        <div class="container justify-content-center pt-5 pb-5">
-            <div class="row mb-4">
-                <h2 class="text-center fw-bold">Tentang Kami</h2>
+            <div style="margin-top: 40px; text-align: center;">
+                <h3 style="color: var(--primary);">Nilai Utama Kami</h3>
+                <p style="font-style: italic;">"Cepat, Transparan, dan Berorientasi pada Kepuasan Pelanggan" </p>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col">
-                    <h3>Kami membantu anda membuat acara yang menyenangkan dan
-                        tak terlupakan bersama keluarga, sahabat, dan kolega.
-                    </h3>
-                    <br>
-                    <h3>Let`s Bring the fun out with <strong>NandoRegx</strong>.</h3>
-                </div>
-                <div class="col">
-                    <p><strong>NandoRegx</strong> adalah penyedia layanan jasa event organizer (EO)
-                        profesional di Yogyakarta yang berfokus pada kualitas dan
-                        kepuasan klien. Kami berpengalaman dalam merancang dan
-                        menyelenggarakan acara untuk kegiatan corporate seperti
-                        family gathering, acara sekolah atau perkuliahan seperti
-                        wisuda, pentas seni atau acara perpisahan, hingga acara
-                        sosial seperti pernikahan atau pesta keluarga dengan
-                        dokumentasi yang sangat lengkap. Berbagai kegiatan baik
-                        telah kami rancang dengan konsep yang unik baik indoor
-                        maupun outdoor seperti outbound untuk mempererat tali
-                        persaudaraan antar karyawan atau menyelenggarakan bazaar
-                        untuk mengenalkan produk Anda kepada khalayak luas.</p>
-                    <p>Mengapa memilih <strong>NandoRegx</strong> sebagai event organizer untuk
-                        acara Anda? Karena kami membuka ruang diskusi bersama
-                        klien sehingga segala ide, masukan, bahkan koreksi dalam
-                        rangka menyelenggarakan sebuah acara yang memuaskan
-                        klien. Tim event organizer <strong>NandoRegx</strong> memiliki jiwa kreatif,
-                        solid, inovatif, dan telah berpengalaman membantu banyak
-                        klien untuk merancang berbagai acara dengan konsep yang
-                        baru, segar, dan unik sehingga tidak akan dapat
-                        dilupakan untuk selamanya. Didukung oleh keahlian dan
-                        pengalaman, jasa event organizer (EO) kami juga memiliki
-                        konsep video dan foto aerial yang akan membuat
-                        dokumentasi acara Anda menjadi lebih menarik, bahkan
-                        kami dapat menyediakan 180° dan 360° photobooth yang
-                        siap memanjakan tamu undangan. Bersama kami, “One Moment
-                        for Everlasting Memories” bukan lagi sekedar impian.
-                        Let’s Bring the Fun Out with <strong>NandoRegx</strong>!</p>
-                </div>
-            </div>
-        </div>
-        <!-- End Tentang Kami -->
+        </section>
+    </div>
 
-        <!-- Footer -->
-        <nav class="navbar bg-dark text-light">
-            <div class="container-fluid">
-                <span>
-                    Copyright © 2022. <strong>NandoRegx</strong> Jasa Event
-                    Organizer (EO) Bazaar, Outbound Profesional di Yogyakarta. All
-                    Rights Reserved
-                </span>
-            </div>
-        </nav>
-        <!-- End Footer -->
+    <footer>
+        <p><strong>PT. Intan Mulya Berkah</strong></p>
+        <p>Menghubungkan Keluarga, Menguatkan Usaha, Membangun Masa Depan Digital [cite: 122]</p>
+        <p style="margin-top: 15px; font-size: 0.8rem; opacity: 0.7;">&copy; 2024 PT. Intan Mulya Berkah. Seluruh hak cipta dilindungi undang-undang.</p>
+    </footer>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>
