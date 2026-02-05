@@ -10,15 +10,7 @@
 </head>
 <body>
 
-    <nav>
-        <a href="index.html" class="logo">IMB Group</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a href="tentang-kami.html" style="color: var(--primary);">Tentang Kami</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-    </nav>
+    <div id="navbar"></div>
 
     <header class="hero-about">
         <h1>Profil Perusahaan</h1>
@@ -87,6 +79,6 @@
         <p>Menghubungkan Keluarga, Menguatkan Usaha, Membangun Masa Depan Digital [cite: 122]</p>
         <p style="margin-top: 15px; font-size: 0.8rem; opacity: 0.7;">&copy; 2024 PT. Intan Mulya Berkah. Seluruh hak cipta dilindungi undang-undang.</p>
     </footer>
-
+<script>fetch('navbar.html').then(r => r.text()).then(html => { document.getElementById('navbar').innerHTML = html; }).catch(() => {});</script>
 </body>
 </html>
