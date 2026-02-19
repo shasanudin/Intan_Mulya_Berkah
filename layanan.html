@@ -7,110 +7,180 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/layanan.css">
+    <style>
+        /* Fallback style jika file CSS tidak ditemukan */
+        .platform-grid {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px 0 20px;
+        }
+        .platform-link {
+            text-decoration: none;
+            color: inherit;
+            padding: 30px 20px;
+            border-radius: 20px;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .platform-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .platform-link i {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .platform-link.tiktok {
+            background: linear-gradient(145deg, #000000, #161616);
+            color: white;
+        }
+        .platform-link.tokopedia {
+            background: #44b200;
+            color: white;
+        }
+        .platform-link.tokopedia i {
+            color: white;
+        }
+        .badge-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .badge {
+            background: #f0f7ff;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            border: 1px solid #c2e0ff;
+        }
+        .badge i {
+            color: #0077be;
+            margin-right: 8px;
+        }
+    </style>
 </head>
 <body>
 
     <div id="navbar"></div>
 
-    <header class="hero-layanan">
-        <h1>Layanan & Unit Bisnis</h1>
-        <p>Menghubungkan Keluarga, Menguatkan Usaha, Membangun Masa Depan Digital</p>
+    <header class="hero-layanan" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; text-align: center;">
+        <h1 style="font-size: 2.5em; margin-bottom: 15px;">Layanan & Unit Bisnis</h1>
+        <p style="font-size: 1.2em; opacity: 0.95;">Menghubungkan Keluarga, Menguatkan Usaha, Membangun Masa Depan Digital</p>
     </header>
 
-    <div class="container">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
         
-        <section class="section-card">
-            <h2><i class="fas fa-wifi"></i> Caruban Internet</h2>
-            <p>Caruban Internet adalah unit usaha <strong>PT. Intan Mulya Berkah</strong> (Mitra Resmi Internet Keluarga) yang berfokus pada penyediaan akses internet berkualitas untuk rumah tangga dan UMKM[cite: 3, 5, 6]. Kami berkomitmen mengurangi kesenjangan digital melalui koneksi yang stabil, andal, dan terjangkau[cite: 5, 16].</p>
+        <section class="section-card" style="background: white; border-radius: 20px; padding: 40px; margin-bottom: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+            <h2 style="color: #333; border-bottom: 3px solid #667eea; padding-bottom: 15px; display: inline-block; margin-bottom: 30px;"><i class="fas fa-wifi" style="color: #667eea; margin-right: 10px;"></i> Caruban Internet</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">Caruban Internet adalah unit usaha <strong>PT. Intan Mulya Berkah</strong> (Mitra Resmi Internet Keluarga) yang berfokus pada penyediaan akses internet berkualitas untuk rumah tangga dan UMKM. Kami berkomitmen mengurangi kesenjangan digital melalui koneksi yang stabil, andal, dan terjangkau.</p>
 
-            <div class="grid-info" style="margin-top: 30px;">
-                <div class="info-box">
-                    <h4>Visi</h4>
-                    <p>Menjadi penyedia layanan internet lokal yang inklusif, terjangkau, dan berkelanjutan guna meningkatkan kesejahteraan masyarakat[cite: 12].</p>
+            <div class="grid-info" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 30px;">
+                <div class="info-box" style="background: #f8f9fa; padding: 25px; border-radius: 15px;">
+                    <h4 style="color: #667eea; margin-bottom: 15px;">Visi</h4>
+                    <p style="color: #666; line-height: 1.6;">Menjadi penyedia layanan internet lokal yang inklusif, terjangkau, dan berkelanjutan guna meningkatkan kesejahteraan masyarakat.</p>
                 </div>
-                <div class="info-box">
-                    <h4>Misi</h4>
-                    <p>Menyediakan fondasi literasi digital, mendukung pertumbuhan UMKM, dan mengelola usaha secara profesional serta transparan[cite: 15, 17, 18].</p>
+                <div class="info-box" style="background: #f8f9fa; padding: 25px; border-radius: 15px;">
+                    <h4 style="color: #667eea; margin-bottom: 15px;">Misi</h4>
+                    <p style="color: #666; line-height: 1.6;">Menyediakan fondasi literasi digital, mendukung pertumbuhan UMKM, dan mengelola usaha secara profesional serta transparan.</p>
                 </div>
             </div>
 
-            <h3>Paket Layanan Internet</h3>
-            <div class="table-container">
-                <table>
-                    <thead>
+            <h3 style="margin: 40px 0 20px; color: #333;">Paket Layanan Internet</h3>
+            <div class="table-container" style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <thead style="background: #667eea; color: white;">
                         <tr>
-                            <th>Nama Paket</th>
-                            <th>Kecepatan</th>
-                            <th>Harga / Bulan</th>
+                            <th style="padding: 15px; text-align: left;">Nama Paket</th>
+                            <th style="padding: 15px; text-align: left;">Kecepatan</th>
+                            <th style="padding: 15px; text-align: left;">Harga / Bulan</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><strong>Paket Easy</strong></td>
-                            <td>5 Mbps</td>
-                            <td>Rp100.000 </td>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 15px;"><strong>Paket Easy</strong></td>
+                            <td style="padding: 15px;">5 Mbps</td>
+                            <td style="padding: 15px;">Rp100.000</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 15px;"><strong>Paket Privat</strong></td>
+                            <td style="padding: 15px;">15 Mbps</td>
+                            <td style="padding: 15px;">Rp155.400</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 15px;"><strong>Paket Hemat</strong></td>
+                            <td style="padding: 15px;">50 Mbps</td>
+                            <td style="padding: 15px;">Rp194.250</td>
                         </tr>
                         <tr>
-                            <td><strong>Paket Privat</strong></td>
-                            <td>15 Mbps</td>
-                            <td>Rp155.400 </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Paket Hemat</strong></td>
-                            <td>50 Mbps</td>
-                            <td>Rp194.250 </td>
-                        </tr>
-                        <tr>
-                            <td><strong>Paket Hebat</strong></td>
-                            <td>100 Mbps</td>
-                            <td>Rp222.000 </td>
+                            <td style="padding: 15px;"><strong>Paket Hebat</strong></td>
+                            <td style="padding: 15px;">100 Mbps</td>
+                            <td style="padding: 15px;">Rp222.000</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3>Kinerja & Keunggulan</h3>
-            <p>Kami bangga telah melayani masyarakat dengan standar pelayanan yang cepat dan berorientasi pada kepuasan pelanggan[cite: 8].</p>
+            <h3 style="margin: 40px 0 20px; color: #333;">Kinerja & Keunggulan</h3>
+            <p style="color: #555; margin-bottom: 20px;">Kami bangga telah melayani masyarakat dengan standar pelayanan yang cepat dan berorientasi pada kepuasan pelanggan.</p>
             <div class="badge-group">
-                <span class="badge"><i class="fas fa-users"></i> 70 Pelanggan Aktif [cite: 43]</span>
-                <span class="badge"><i class="fas fa-check"></i> Harga Kompetitif & Ramah UMKM [cite: 34]</span>
-                <span class="badge"><i class="fas fa-tools"></i> Dukungan Teknis Responsif [cite: 36]</span>
-                <span class="badge"><i class="fas fa-chart-line"></i> Cashflow Positif & Stabil [cite: 49]</span>
+                <span class="badge"><i class="fas fa-users"></i> 70 Pelanggan Aktif</span>
+                <span class="badge"><i class="fas fa-check"></i> Harga Kompetitif & Ramah UMKM</span>
+                <span class="badge"><i class="fas fa-tools"></i> Dukungan Teknis Responsif</span>
+                <span class="badge"><i class="fas fa-chart-line"></i> Cashflow Positif & Stabil</span>
             </div>
         </section>
 
-        <section class="section-card" style="text-align: center;">
-            <h2><i class="fas fa-shopping-cart"></i> Intan Mulya Berkah Online Shop</h2>
-            <p style="max-width: 800px; margin: 0 auto;">Unit bisnis e-commerce kami menyediakan berbagai produk pilihan berkualitas dengan jaminan originalitas dan respon pelayanan yang cepat untuk memenuhi kebutuhan harian Anda.</p>
+        <section class="section-card" style="background: white; border-radius: 20px; padding: 40px; margin-bottom: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center;">
+            <h2 style="color: #333; border-bottom: 3px solid #44b200; padding-bottom: 15px; display: inline-block; margin-bottom: 30px;"><i class="fas fa-shopping-cart" style="color: #44b200; margin-right: 10px;"></i> Intan Mulya Berkah Online Shop</h2>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; color: #555;">Unit bisnis e-commerce kami menyediakan berbagai produk pilihan berkualitas dengan jaminan originalitas dan respon pelayanan yang cepat untuk memenuhi kebutuhan harian Anda.</p>
             
             <div class="platform-grid">
-                <a href="https://www.tiktok.com" target="_blank" class="platform-link tiktok">
+                <a href="https://www.tiktok.com/@intan.mulya.berka" target="_blank" rel="noopener noreferrer" class="platform-link tiktok">
                     <i class="fab fa-tiktok"></i>
-                    <h3>TikTok Shop</h3>
-                    <p>Cek Live Shopping & Promo</p>
+                    <h3 style="margin: 15px 0 10px;">TikTok Shop</h3>
+                    <p style="opacity: 0.9; font-size: 0.9rem;">@intan.mulya.berka</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Cek Live Shopping & Promo</p>
                 </a>
-                <a href="https://www.tokopedia.com" target="_blank" class="platform-link tokopedia">
+                <a href="https://www.tokopedia.com/intanmulya" target="_blank" rel="noopener noreferrer" class="platform-link tokopedia">
                     <i class="fas fa-shopping-bag"></i>
-                    <h3>Tokopedia</h3>
-                    <p>Kunjungi Official Store</p>
+                    <h3 style="margin: 15px 0 10px;">Tokopedia</h3>
+                    <p style="opacity: 0.9; font-size: 0.9rem;">intanmulya</p>
+                    <p style="margin-top: 10px; font-size: 0.9rem;">Kunjungi Official Store</p>
                 </a>
             </div>
             
-            <div style="margin-top: 40px; padding: 20px; background: #fffde7; border-radius: 15px; display: inline-block;">
-                <p><strong>Kenapa Belanja di Kami?</strong><br>
-                <i class="fas fa-shield-alt"></i> Terpercaya | <i class="fas fa-truck"></i> Pengiriman Cepat | <i class="fas fa-headset"></i> Respon Kilat</p>
+            <div style="margin-top: 40px; padding: 25px; background: #f1f8e9; border-radius: 15px; display: inline-block;">
+                <p style="margin: 0; color: #2e7d32;"><strong>Kenapa Belanja di Kami?</strong><br>
+                <i class="fas fa-shield-alt" style="margin: 0 5px;"></i> Terpercaya | 
+                <i class="fas fa-truck" style="margin: 0 5px;"></i> Pengiriman Cepat | 
+                <i class="fas fa-headset" style="margin: 0 5px;"></i> Respon Kilat</p>
             </div>
         </section>
 
     </div>
 
-    <footer>
-        <p><strong>PT. Intan Mulya Berkah</strong></p>
-        <p>Unit Bisnis: Caruban Internet & IMB Online Shop</p>
-        <p style="margin-top: 15px; font-size: 0.8rem; opacity: 0.7;">&copy; 2024 PT. Intan Mulya Berkah. Seluruh hak cipta dilindungi undang-undang.</p>
+    <footer style="background: #1a1a2e; color: white; padding: 40px 20px; text-align: center;">
+        <p style="font-size: 1.2rem; margin-bottom: 10px;"><strong>PT. Intan Mulya Berkah</strong></p>
+        <p style="color: #a8b2c1; margin-bottom: 5px;">Unit Bisnis: Caruban Internet & IMB Online Shop</p>
+        <p style="color: #a8b2c1; margin-bottom: 5px;">📱 TikTok: @intan.mulya.berka | 🛒 Tokopedia: intanmulya</p>
+        <p style="margin-top: 25px; font-size: 0.8rem; opacity: 0.7;">&copy; 2024 PT. Intan Mulya Berkah. Seluruh hak cipta dilindungi undang-undang.</p>
     </footer>
 
-    <script>fetch('navbar.html').then(r => r.text()).then(html => { document.getElementById('navbar').innerHTML = html; }).catch(() => {});</script>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(html => { 
+                document.getElementById('navbar').innerHTML = html; 
+            })
+            .catch(() => {
+                // Fallback jika navbar tidak ditemukan
+                document.getElementById('navbar').innerHTML = '<nav style="background: #1a1a2e; padding: 15px; color: white; text-align: center;">Menu Navigasi</nav>';
+            });
+    </script>
 
 </body>
 </html>
